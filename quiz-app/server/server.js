@@ -28,7 +28,7 @@ db.once('open', () => {
 const app = express();
 
 
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.resolve(__dirname,'..', 'public')));
 
 
 app.use(express.json());
