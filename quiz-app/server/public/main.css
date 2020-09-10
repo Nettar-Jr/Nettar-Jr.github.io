@@ -1,0 +1,63 @@
+/* styling main section of user and quiz */
+
+/* section for start quiz */
+#question-container{
+    text-align: center;
+}
+
+hr{
+    width: 60%;
+}
+
+#options-container label{
+    padding: 2px 4px;
+    margin: auto;
+    width: 60%;
+    display: block;
+    background-color: lightgray;
+}
+
+#options-container label:hover{
+    background-color: gray;
+}
+
+input[type="radio"]{
+    float: right;
+    /* width: 60%; */
+}
+
+#question > #next{
+    margin: auto;
+}
+
+/* styling of section for create quiz */
+#questionForm label{
+    margin: auto;
+    width: 35%;
+    display: block;
+}
+#questionForm input{
+    width: 100%;
+}
+
+input[type="text"]{
+    padding: 2px;
+}
+
+/* styling for logout section (login form and logout form)*/
+
+
+.formStyle{
+    width: auto;
+    height: auto;
+    margin: 4rem;
+    border: solid black;
+    text-align: center;
+    padding: 1rem 0;
+}
+p input{
+    width: 50%;
+}
+.hide{
+    display: none;
+}

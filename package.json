@@ -1,0 +1,23 @@
+{
+  "name": "nettar-jr.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "mongodb": "^3.6.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nettar-Jr/Nettar-Jr.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Nettar-Jr/Nettar-Jr.github.io/issues"
+  },
+  "homepage": "https://github.com/Nettar-Jr/Nettar-Jr.github.io#readme"
+}
