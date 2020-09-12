@@ -4,6 +4,7 @@ const path = require('path');
 
 const { Question } = require('./schemas/question');
 const { User } = require('./schemas/user');
+const { Quiz } = require('./schemas/quiz');
 
 
 mongoose.connect(
@@ -28,14 +29,10 @@ db.once('open', () => {
 const app = express();
 
 
-app.use(express.static(path.resolve(__dirname,'..', 'public')));
+app.use(express.static(path.resolve(__dirname,'..', 'client')));
 
 
 app.use(express.json());
-
-// app.get('/', (req, res) => {
-//     res.sendFile(__dirname +'/public/index.html');
-// });
 
 //question api for get
 app.get('/questions', (req, res) => {
@@ -43,10 +40,42 @@ app.get('/questions', (req, res) => {
         .then(questions => {
             res.json(questions); 
         })
+})
+
+app.get('/quizzes', (req, res) =>{
+    Quiz.find()
+        .then(quizzes => {
+            res.json(quizzes);
+        })
+})
+
+app.post('/quiz', async (req, res) => {
+    console.log('req.body>>>>>>>>>>>>', req.body)
+    const {title, questions } = req.body;
+    
+    const createdQuestions = await Question.create(questions);
+
+    Quiz.create({
+        title,
+        questions: createdQuestions
+    }).then((quiz) => {
+        console.log('quiz created successfully >>>>>>>>>>>', quiz);
+        res.status(201).json({
+            success: true,
+            message: 'Quiz Created Successfully',
+            quiz
+        });
+    })
+    .then((err)=> {
+        console.log('there was an error', err)
+        res.status(400).json({
+            success: false,
+            message: err.message,
+        });
+    });
 });
 
-//question api for post
-app.post('/questions', (req, res) => {
+app.put('/questions', (req, res) => {
     const newQuestion = req.body;
     console.log(newQuestion);
 
@@ -75,7 +104,6 @@ app.post('/login', (req, res) => {
     console.log('user to find>>>', checkUser);
     User.findOne(checkUser)
         .then((foundUser) => {
-            console.log('found user>>>>>>>>>>>>>>>>>>>>>', foundUser)
             if (foundUser){
                 res.json({
                     success: true,
