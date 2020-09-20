@@ -5,149 +5,261 @@
     max-width: 100%;
     max-height: 100%;
 }
-body {
-    background: linear-gradient(0.25turn, #cfd9df, #b3bfc5, #e2ebf0);
-}
 
 .container{
     height: 100%;
     width: 100%;
-    text-align: center;
+    background-color: black;
 }
 
-/**Navigation and List*/
-.navigate {
+/* The header styling */
+.header{
+    width: 100%;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+.link-container{
+    width: 100%;
     display: flex;
-    justify-content: center;
-    text-align: center;
-    padding: auto;
-    width: 100%;
+    font: italic small-caps bold 12px/0 cursive;
+}
+
+.nav{
+    width: 75%;
     height: 10vh;
+    padding-top: 5vh;
 }
 
-.nav { 
-    position: fixed;
-    background-color:rgba(36, 33, 33, 0.3);
-    padding: 18px 10px;
-    width: 100%;
-    position: fixed;
-    list-style-type: none;
+.nav .logo-name{
+    border-top: thick double red;
+    border-left: solid yellow;
+    border-right: solid yellow;
+    border-bottom: thick double red;
+    margin-right: 5vh;
+    font-style: normal;
 }
 
-li {
+.logo-name a{
+    padding: 5px;
+}
+
+.header .nav li {
+    padding: 1px;
+    margin-left: 75px;
     display: inline;
-    list-style-type: none;
 }
 
-li a {
-    color: floralwhite;
-    padding: 5px 30px;
-    text-decoration: none;
-    font:  small-caps bold 16px/2 cursive;
-}
-
-li a:hover {
-    cursor: pointer;
-    background-color: rgb(109, 106, 106, 0.5);
-}
-/* Profile styling */
-
-.profileStyle {
-    width: 30%;
-    height: 70vh;
-}
-
-.profileStyle img{
-    opacity: 0.5;
-    width: 30vw;
-    height: 60vh;
-}
-
-p.name{
-    position: absolute;
-    top: 66%;
-    left: 12%;
-    color:rgb(0, 0, 0);
-    font-size: x-large;
-    font-family: cursive;
-}
-
-.note {
-    opacity: .8;
-    padding: 5rem 0;
-    height: 70vh;
-    width: 70%;
-    position: absolute;
-    top: 10%;
-    left: 30%;
-    color: rgb(19, 12, 2);
-    font: bold small-caps 15px/2 cursive;  
-}
-
-.aboutStyle {
-    padding: 10px 0;
-    border-right:solid darkslategrey ;
-    width: 70%;
-    height: 14rem;
-    background-color: rgba(134, 132, 132, 0.5);
-}
-
-.about {
-    text-decoration: underline darkslategray;
-    color: darkslategray;
-    position: absolute;
-    width: 70%;
-}
-
-.info{
-    width: 80%;
-    padding: 5rem  0 7rem 5rem;
-    color: rgba(15, 1, 1, 0.3);
-    font: bold 15px cursive;
-}
-
-/* skills styling */
-.skills {
-    background-color:rgba(31, 30, 30, 0.3);
-    border-left:solid darkslategrey ;
-    position: absolute;
-    top: 60%;
-    left: 70%;
-    width: 30%;
-    height:14rem;
-}
-
-.skills h1 {
-    color: darkslategray;
-    text-decoration: underline darkslategray;
-
-    
-}
-
-#skill {
-  font: bold small-caps 15px/2 cursive;
-  color: rgba(15, 1, 1, 0.3);
-
-}
-/* footer style */
-.footer{
-    width: 100%;
-    height: 20vh;
-    padding-top: 5rem;
-    background-color: rgb(53, 53, 53, .5);
-
-}
-
-.footer a {
+.header .nav a {
     text-decoration: none;
     color: white;
-    padding: 0 2rem;
-    font: bold small-caps 15px/2 cursive;
+    transition: 1.5s;
 }
 
-.footer a:hover {
-    cursor: pointer;
-    background-color:rgba(36, 33, 33, 0.5);
-    font: bold small-caps 16px cursive;
+
+.nav .pointer a:hover{
+    color: orange;
+    text-shadow: 1px 1px 2px #08a0e9;
+    transition: 1s ease-in-out;
 }
 
+.social{
+    width: 25%;
+    padding-top: 5vh;
+    padding-right: 10vh;
+}
+
+.social li{
+    display: inline;
+    text-decoration: none;
+}
+
+#social {
+    width: 16px;
+    height: 16px;
+    margin-left: 30px;
+    float: right;
+    transition: 1.5s;
+}
+
+#social:hover{
+    opacity: .4;
+    transition: 1s ease-in-out;
+    transform: scale(1.5);
+}
+
+.salutation{
+  width: 100%;
+  text-align: center;
+}
+
+em{
+    color: red;
+}
+
+i{
+    font: italic small-caps bold 20px/0 cursive;
+}
+
+b{
+    text-decoration: line-through double rgba(53, 52, 49, 0.578) ;
+}
+
+h3{
+    align-self: center;
+    font: oblique 45deg lighter 20px/1.5 cursive ;
+    color: white;
+    background-color: rgba(10, 10, 10, 0.3);
+
+}
+
+.hello-world {
+    font: italic small-caps bold 50px/2 cursive;
+    text-align: center;
+    display: inline-flex;
+}
+
+#p {
+    color: skyblue;
+}
+
+strong{
+    color: green;
+}
+
+.bk{
+    width: 1200px;
+    height: 600px;
+    object-fit: cover;
+}
+
+/* about styling */
+.about-style{
+    width: 100%;
+    display: flex;
+    color: white;
+}
+
+.icon{
+    height: 45%;
+    width: 35%;
+    margin-top: 20%;
+    margin-left: 7px;
+    opacity: 0.3;
+}
+
+#skill{
+    list-style-type: none;
+}
+
+.me, .note, .skills{
+    width: 33%;
+    height: 50vh;
+    display: flex;
+    border-right: thick double rgb(166, 221, 102);
+    border-radius: 2vh;
+}
+
+.comment{
+    width: 60%;
+    text-align: center;
+    padding: 2px 4px;
+    margin: auto;
+}
+
+.comment h1{
+    font: italic small-caps bold 16px/1 cursive;
+    display: inline;
+}
+
+.comment:not(h1) {
+    font: oblique normal lighter 13px/1.5 serif ;
+    color: rosybrown;
+}
+
+blockquote{
+    font: small-caption;
+}
+
+/* about styling */
+.footer{
+    width: 100%;
+    height: 50vh;
+    text-align: center;
+}
+
+hr{
+    width: 70%;
+    margin: auto;
+}
+.add{
+    margin:auto;
+    width: 70%;
+    height: 40vh;
+    background-color: rgb(22, 22, 6);
+}
+
+.cover{
+    display: inline-flex;
+    height: 80%;
+    margin-top: 7vh;
+}
+
+.others{
+    width: 50%;
+    margin-right: 3vw;
+    color: wheat;
+    opacity: .8;
+}
+
+h5{
+    width: 50%;
+    height: 20%;
+    margin-left: 3vw;
+    font: oblique 45deg lighter 15px/1.5 cursive ;
+    color: white;
+}
+
+h5 p, #more{
+    color: GOld;
+    font-size: larger;
+    text-decoration: underline;
+}
+
+.others a{
+    text-decoration: none;
+    color: yellow;
+}
+
+.copyright{
+    margin-left: 20vw;
+    color: white;
+    padding-top: 4vh;
+}
+
+
+/* 
+@media screen and (max-width: 600px){
+    .navigate li:not(:first-child) {display: none;}
+    .navigate a.icon {
+        float: right;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .navigate.responsive {position: relative;}
+    .navigate.responsive img {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .navigate.responsive li {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+}
