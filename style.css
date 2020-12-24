@@ -6,6 +6,17 @@
     max-height: 100%;
 }
 
+a{
+    text-decoration: none;
+    color: white;
+    transition: 1s ease;
+}
+
+li{
+    list-style: none;
+    text-decoration: none;
+}
+
 .container{
     height: 100%;
     width: 100%;
@@ -15,151 +26,105 @@
 /* The header styling */
 .header{
     width: 100%;
-    position: absolute;
+    position: fixed;
     margin: 0;
-    padding: 0;
-    color: white;
+    padding: 5vh 5vh;
+    font: normal lighter 1.5vw/1.5 arial ;
 }
 
 .link-container{
     width: 100%;
     display: flex;
-    font: italic small-caps bold 12px/0 cursive;
+    justify-content: space-between;
 }
 
-.nav{
-    width: 75%;
-    height: 10vh;
-    padding-top: 5vh;
-}
-
-.nav .logo-name{
-    border-top: thick double red;
-    border-left: solid yellow;
-    border-right: solid yellow;
-    border-bottom: thick double red;
-    margin-right: 5vh;
-    font-style: normal;
-}
-
-.logo-name a{
-    padding: 5px;
-}
-
-.header .nav li {
-    padding: 1px;
-    margin-left: 75px;
-    display: inline;
-}
-
-.header .nav a {
-    text-decoration: none;
+.pointer{
+    display: inline-flex;
+    margin-right: 5vw;
     color: white;
-    transition: 1.5s;
 }
 
 
-.nav .pointer a:hover{
-    color: orange;
-    text-shadow: 1px 1px 2px #08a0e9;
-    transition: 1s ease-in-out;
-}
 
-.social{
-    width: 25%;
-    padding-top: 5vh;
-    padding-right: 10vh;
-}
-
-.social li{
-    display: inline;
-    text-decoration: none;
-}
-
-#social {
-    width: 16px;
-    height: 16px;
-    margin-left: 30px;
-    float: right;
-    transition: 1.5s;
-}
-
-#social:hover{
-    opacity: .4;
-    transition: 1s ease-in-out;
-    transform: scale(1.5);
+.logo-name:hover, .pointerNav:hover{
+    color: rgb(31, 4, 180);
+    text-shadow: 1px 1px 2px #8fa6e9;
+    transition: 1s;
 }
 
 .salutation{
-  width: 100%;
-  text-align: center;
+    padding-top: 20vh;
+    width: 100%;
+    text-align: center;
 }
 
 em{
     color: red;
 }
 
-i{
-    font: italic small-caps bold 20px/0 cursive;
-}
-
-b{
-    text-decoration: line-through double rgba(53, 52, 49, 0.578) ;
-}
-
 h3{
     align-self: center;
-    font: oblique 45deg lighter 20px/1.5 cursive ;
+    font: oblique 45deg lighter 2vw/1.5 cursive ;
     color: white;
     background-color: rgba(10, 10, 10, 0.3);
-
 }
 
 .hello-world {
-    font: italic small-caps bold 50px/2 cursive;
+    font: italic small-caps bold 3.5vw/2 cursive;
     text-align: center;
     display: inline-flex;
 }
 
-#p {
+.salutation h1 #p {
     color: skyblue;
 }
 
-strong{
+.salutation h1 strong{
     color: green;
 }
 
-.bk{
-    width: 1200px;
-    height: 600px;
-    object-fit: cover;
+#headerNav{
+    background-image: url(wp.jpg);
+    background-repeat: no-repeat;
+    height: 100vh;
+    min-height: 375px;
+    position: relative;
 }
 
 /* about styling */
-.about-style{
-    width: 100%;
-    display: flex;
+.about-style{   
+    width: 50%;
+    margin: auto;
+    display: block;
     color: white;
 }
 
+.big #p {
+    color: skyblue;
+}
+
+.big strong{
+    color: green;
+}
+
+.big{
+    display: flex;
+}
+
 .icon{
-    height: 45%;
-    width: 35%;
-    margin-top: 20%;
-    margin-left: 7px;
+    width: 10vw;
+    height: auto;
     opacity: 0.3;
+    margin-left: 40%;
 }
 
 #skill{
     list-style-type: none;
 }
 
-.me, .note, .skills{
-    width: 33%;
-    height: 50vh;
-    display: flex;
-    border-right: thick double rgb(166, 221, 102);
-    border-radius: 2vh;
+.me, .skills{
+    display: block;
+    margin: 10vh 0;
 }
 
 .comment{
@@ -170,85 +135,103 @@ strong{
 }
 
 .comment h1{
-    font: italic small-caps bold 16px/1 cursive;
+    font: italic small-caps bold 2vw/1 cursive;
     display: inline;
 }
 
 .comment:not(h1) {
-    font: oblique normal lighter 13px/1.5 serif ;
-    color: rosybrown;
-}
-
-blockquote{
-    font: small-caption;
+    font: oblique normal lighter 1.3vw/1.5 serif ;
+    color: whitesmoke;
 }
 
 /* about styling */
+
 .footer{
     width: 100%;
-    height: 50vh;
     text-align: center;
+}
+
+.heading{
+    width: 10%;
+    margin-left: 15vw;
+    line-height: 60%;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: larger;
+    font-style: normal;
+    border-bottom: solid white;
 }
 
 hr{
     width: 70%;
     margin: auto;
+    padding: 0;
 }
 .add{
     margin:auto;
     width: 70%;
-    height: 40vh;
-    background-color: rgb(22, 22, 6);
+    height: auto;
+    background-color: rgb(48, 47, 47);
 }
 
 .cover{
-    display: inline-flex;
-    height: 80%;
-    margin-top: 7vh;
+    display: block-flex;
+    /* height: auto; */
+    font-size: 2vw;
 }
 
-.others{
-    width: 50%;
-    margin-right: 3vw;
-    color: wheat;
-    opacity: .8;
-}
-
-h5{
-    width: 50%;
-    height: 20%;
-    margin-left: 3vw;
-    font: oblique 45deg lighter 15px/1.5 cursive ;
+.note{
+    padding: 5vh;
     color: white;
 }
 
-h5 p, #more{
-    color: GOld;
-    font-size: larger;
-    text-decoration: underline;
+.social{
+    width: 50%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
 }
 
-.others a{
-    text-decoration: none;
-    color: yellow;
+.social li{
+    color: skyblue;
+    font: 2vw arial;
+    opacity: 0.5;
+    transition: 1s ease;
+}
+
+.social li:hover{
+    opacity: 0.9;
+    transition: 1s ease;
+    color: rgb(92, 192, 232);
+}
+
+#social{
+    width: 2vw;
+    height: auto;
+    margin: auto;
 }
 
 .copyright{
-    margin-left: 20vw;
-    color: white;
+    margin: auto;
+    height: 10vh;
     padding-top: 4vh;
+    background-color: rgb(28, 27, 27);
+}
+
+.copyright>h5 {
+    font-family: "Century Gothic";
+    font-size: 1.5vw;
+    color: whitesmoke;
 }
 
 
-/* 
-@media screen and (max-width: 600px){
-    .navigate li:not(:first-child) {display: none;}
-    .navigate a.icon {
-        float: right;
-        display: block;
+@media screen and (max-width: 1150){
+    #headerNav{
+
+        min-height: auto;
     }
 }
 
+/* 
 @media screen and (max-width: 600px) {
     .navigate.responsive {position: relative;}
     .navigate.responsive img {

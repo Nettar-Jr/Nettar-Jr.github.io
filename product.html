@@ -3,107 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="product.css">
     <title>Document</title>
-    <style>
-        *{
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-
-        .header{
-            width: 100%;
-            height: 12vh;
-            background-color: #2d3436;
-            background-image: linear-gradient(315deg, #2d3436 0%, #000000 74%);
-            display: inline-flex;
-        }        
-
-        .nav{
-            width: 60%;
-            height: 10vh;
-            padding-top: 5vh;
-            text-align: center;
-            list-style-type: none;
-            margin-left: 10vw;
-        }
-
-        .header .nav a{
-            list-style-type: none;
-            text-decoration: none;
-            font: normal small-caps bold 12px/0 cursive;
-            color: white;
-        }
-
-        .nav .logo-name{
-            width: 4vw;
-            border-top: thick double red;
-            border-left: solid yellow;
-            border-right: solid yellow;
-            border-bottom: thick double red;
-            margin-right: 5vh;
-            color: white;
-        }
-
-        .social{
-            width: 25%;
-            padding-top: 5vh;
-        }
-
-        .social li{
-            display: inline;
-            text-decoration: none;
-        }
-
-        #social {
-            width: 24px;
-            height: 24px;
-            float: right;
-            margin-right: 5vw;
-            transition: .5s;
-        }
-
-        #social:hover{
-            opacity: .4;
-            transition: 1s ease-in-out;
-        }
-
-        .grid-container{
-            display: grid;
-            grid-template-columns: auto auto auto auto;
-            background-color: #485461;
-            background-image: linear-gradient(315deg, #485461 0%, #28313b 74%);
-            text-align: center;
-        }
-
-        .grid-container a{
-            justify-content: center;
-            /* background-color: silver 0.3; */
-            border: 1px solid rgb(243, 168, 168);
-            padding: 20px;
-            margin:5px 20px;
-            transition: .5s;
-        }
-
-        a p{
-            color: black;
-            font: normal small-caps bold 12px/2 cursive;
-            color: white;
-        }
-
-        a{
-            text-decoration: none;
-        }
-
-        .icon{
-            width: 250px;
-            height: 200px;
-        }
-
-        .grid-container a:hover{
-            transform: scale(1.05);
-        }
-    </style>
 </head>
 <body>
     <div class="header">
@@ -116,11 +17,14 @@
             <li> <a href="https://www.facebook.com/alabi.aladin/" alt="facebook"><img id="social" src="facebook.png"></a></li>
         </ul>
     </div>
-    <div class="grid-container">
-        <a href=""><p>Q&A Web App (Done)</p><img class="icon" src="icon.png"></a>
-        <a href=""><p>ToDo Web App(In Progress)</p><img class="icon" src="todo.png"></a>
-        <a href=""><p>Coming Soon</p><img class="icon" src="comming soon.png"></a>
-        <a href=""><p>Coming Soon</p><img class="icon" src="comming soon.png"></a>
-        <a href=""><p>Coming soon</p><img class="icon" src="comming soon.png"></a>
+    <div class="grid-box" style="width: 100%;">
+        <div class="grid-container">
+            <a href=""><p>Q&A Web App (Done)</p><img class="icon" src="icon.png"></a>
+            <a href=""><p>ToDo Web App(In Progress)</p><img class="icon" src="todo.png"></a>
+            <a href=""><p>Coming Soon</p><img class="icon" src="comming soon.png"></a>
+            <a href=""><p>Coming Soon</p><img class="icon" src="comming soon.png"></a>
+            <a href=""><p>Coming soon</p><img class="icon" src="comming soon.png"></a>
+        </div>
+    </div>
 </body>
 </html>

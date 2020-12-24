@@ -8,31 +8,26 @@
 </head>
 <body>
     <div class="container">
-
-        <div class="header" style="max-width: 100%">
-            <div class="link-container">
-                <ul class="nav">
-                    <li class="logo-name"><a href="#">ALABI</a></li>
-                    <li class="pointer"><a href="#">Home</a></li>
-                    <li class="pointer"><a href="#about">About</a></li>
-                    <li class="pointer"><a href="product.html">Projects</a></li>
-                    <li class="pointer"><a href="#">Contact</a></li>
-                </ul>
-                <ul class="social">
-                    <li> <a href="https://github.com/Nettar-Jr" alt="github"><img id="social" src="github.png"></a></li>
-                    <li> <a href="https://twitter.com/i_am_kelvz" alt="twitter"><img id="social" src="twitter.png"></a></li>
-                    <li> <a href="https://www.facebook.com/alabi.aladin/" alt="facebook"><img id="social" src="facebook.png"></a></li>
-                </ul>
+        <section id="headerNav">
+            <div class="header" style="max-width: 100%">
+                <div class="link-container">
+                    <div class="home">
+                        <a class="logo-name" href="#">ALABI</a>
+                    </div>
+                    <ul class="nav">
+                        <li class="pointer"><a class="pointerNav" href="product.html">Projects</a></li>
+                        <li class="pointer"><a class="pointerNav" href="#about">About</a></li>
+                        <li class="pointer"><a class="pointerNav" href="#contact">Contact</a></li>
+                    </ul>
+                </div>
             </div>
-
             <div class="salutation">
                 <br><br><br><br>
-                <h1 class="hello-world"><p id="p">AlABI</p> <pre> </pre> <strong>ABDULMUMUNI</strong></h1>
+                <h1 class="hello-world"><p id="p">ALABI</p> <pre> </pre> <strong>ABDULMUMUNI</strong></h1>
                 <br><br><br>
                 <h3>Getting a simple static webpage in <em>20 minute</em> <br> or <br> a fancy animated webpage in <em>an hour</em> has never been easier.<br> If this is what you are looking for, Sorry! <em>wrong door.</em> </h3>
             </div>
-        </div>
-        <img class="bk" src="wp.jpg" alt="background" style="width:100%">
+         </section>
         
         <a id="about">
         <section class="about-style">
@@ -43,20 +38,10 @@
                     <p class="info"> Alabi Abdulmumuni is web developer from Nigeria. This website is his second finished project. Click on the projects link to see more of his projects</p>
                 </div>
             </div>
-            <div class="note">
-                <img class="icon" src="quotes.jpg" alt="quotes-icon">
-                <div class="comment">
-                    <h1 class="name big"><strong id="p">Favourite</strong> <strong>Quote</strong></h1>
-                    <br><br>
-                    <q>Logic will take you from point A to  B but Imagination will take you everywhere.</q>
-                    <br><br>
-                    <blockquote>Albert Einstein</blockquote>
-                </div>
-            </div>
             <div class="skills">
-                <img class="icon big" src="skills.jpg" alt="skill-icon">
+                <img class="icon" src="skills.jpg" alt="skill-icon">
                 <div class="comment">
-                    <h1><strong id="p">Ski</strong><strong>lls</strong></h1>
+                    <h1 class="skill big"><strong id="p">Ski</strong><strong>lls</strong></h1>
                     <br><br>
                     <ul id="skill">
                         <li>HTML<br></li>
@@ -68,39 +53,33 @@
         </section>
         </a>
 
-        <section>
-            <hr>
-        </section>
-        <footer class="footer">
-            <div class="add">
-                <div class="cover">
-                    <div class="others">
-                        <p>
-                            <p id="more"> More → </p>
-                            Aside being a web developer Alabi is also a Librarian, Poet <br> and sometimes a song writer. <br>
-                            If you care to read some of his poetry click <a href="">here.</a>
+        <section id="footer">
+            <footer class="footer">
+                <h3 class="heading">
+                    Contact
+                </h3>
+                <a id="contact">
+                <hr>
+                <div class="add">
+                    <div class="cover">
+                        <p class="note">
+                            For more information, feel free to contact me through any of the following channels.
                         </p>
+                        <ul class="social">
+                            <li> <a href="https://github.com/Nettar-Jr" alt="github"><img id="social" src="github.png"></a><br>github</li>
+                            <li> <a href="https://twitter.com/i_am_kelvz" alt="twitter"><img id="social" src="twitter.png"></a><br>twitter</li>
+                            <li> <a href="https://www.facebook.com/alabi.aladin/" alt="facebook"><img id="social" src="facebook.png"></a><br>facebook</li>
+                        </ul>
                     </div>
-                    <h5> <p>Opinion Box</p>First <em>impression</em><br> should never be your metric for measuring good or bad  <br> but<i>...</i> let's make series of memorable first <em>impression</em> anyway, <br> for there is no such thing as a <b>Second first <em>impression</em></b>.</h5>
                 </div>
-            </div>
-            <hr>
-            <div class="copyright">
-                <h5>Copyright © 2020 ALABI. All Rights Reserved</h5>
-            </div>
-        </footer>
+                <hr>
+                </a>>
+                <div class="copyright">
+                    <h5>Copyright © 2020 Alabi. All Rights Reserved</h5>
+                </div>
+            </footer>
+        </section>
     </div>
-
-    <script>
-        function toggleMenu() {
-            var x = document.querySelector(".navigate");
-            if (x.className === "navigate") {
-                x.className += " responsive ";
-            } else{
-                x.className = "navigate";
-            }
-        }
-    </script>
 
 </body>
 </html>
