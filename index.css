@@ -86,8 +86,8 @@ p {
   align-items: center;
 }
 
-.hideNav > .navLink {
-  border-radius: 2px;
+.hideNav > .navLink a {
+  border-radius: 5px;
 }
 
 .toggleMenu
@@ -96,9 +96,10 @@ p {
   padding: 0;
   margin: 0;
 }
+
 .hideNav > .navLink a:-webkit-any-link {
   margin: 0.5em;
-  padding: 0.5em;
+  padding: 0.5em 1.5em;
 }
 
 .hideNav > .navLink a:-webkit-any-link:hover {
