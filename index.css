@@ -270,6 +270,7 @@ p {
 
 .profile:hover {
   filter: blur(0);
+  filter: brightness(400px);
 }
 
 .centerHover {
@@ -478,7 +479,7 @@ p {
 
   .headerNav {
     width: 80%;
-    padding-bottom: 20vh;
+    padding-bottom: 10vh;
   }
 
   .navigator {
@@ -514,6 +515,11 @@ p {
     width: 30vh;
     height: 40vh;
     padding-bottom: 20%;
+  }
+
+  .profile {
+    width: 30vh;
+    height: 40vh;
   }
 
   /* project styling */
@@ -598,6 +604,10 @@ p {
     justify-content: end;
   }
 
+  .headerNav {
+    padding-bottom: 10vh;
+  }
+
   .hideNav {
     display: none;
   }
@@ -650,7 +660,7 @@ p {
     } */
 
   .space {
-    height: 10vh;
+    height: 5vh;
   }
 
   /* styling salutation */
@@ -697,7 +707,12 @@ p {
   .frame,
   .imgFrame {
     width: 60vw;
-    height: 40vh;
+    height: 45vh;
+  }
+
+  .profile {
+    width: 60vw;
+    height: 45vh;
   }
 
   /* project styling */
