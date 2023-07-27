@@ -1,0 +1,160 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f2f2f2;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Century Gothic;
+}
+
+p {
+  font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+  font-size: 14px;
+}
+
+header {
+  background-color: #009688;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  background-color: #444;
+  padding: 0.5rem 0;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 1rem;
+  padding: 0.5rem 1rem;
+}
+
+nav a:hover {
+  background-color: #555;
+}
+
+section {
+  margin: auto;
+  width: 90%;
+  padding: 2rem;
+  text-align: left;
+}
+
+#about h2 {
+  font-size: 40px;
+  margin-bottom: -10px;
+}
+
+#about p {
+  width: 50%;
+}
+
+.project {
+  display: flex;
+  gap: 20px; /* Adjust the gap between the containers as needed */
+  /* border: 1px solid #ccc; */
+  padding: 1rem;
+  margin-bottom: 2rem;
+}
+
+.project img {
+  max-width: 100%;
+  height: auto;
+}
+
+.landscape-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.portrait-thumbnail {
+  position: absolute;
+  bottom: 20px; /* Adjust the positioning of the thumbnail */
+  right: 10px; /* Adjust the positioning of the thumbnail */
+  width: 100px; /* Adjust the width of the thumbnail */
+  height: 150px; /* Adjust the height of the thumbnail */
+}
+
+.portfolio-container {
+  width: 50%; /* Each container takes 50% width to be side by side */
+  position: relative;
+  overflow: hidden;
+}
+
+.landscape-image {
+  width: 100%;
+  height: auto;
+}
+
+.description {
+  padding: 10px;
+  background-color: #f0f0f0; /* Optional: Add a background color to the description area */
+}
+
+/* Footer */
+.footer {
+  background-color: #009688;
+  width: 100%;
+  color: white;
+  margin: auto;
+  padding-top: 5vh;
+  text-align: center;
+}
+
+.questTag {
+  color: #ccd6f6;
+  font-size: 60px;
+}
+
+.contact-container {
+  width: 100%;
+  margin: 5vh 0;
+}
+
+.contact-container .note {
+  width: 60%;
+  margin: auto;
+}
+
+.social {
+  width: 50%;
+  margin: auto;
+  padding: 15px 0;
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  justify-content: space-evenly;
+}
+
+.social li {
+  padding: 30px 10px;
+  background-color: transparent;
+}
+
+.social li a {
+  color: white;
+}
+
+.social li a:hover {
+  color: #60ce5a;
+}
+
+.date {
+  width: 100%;
+}
+
+.date p {
+  padding: 5vh;
+}
