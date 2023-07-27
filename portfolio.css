@@ -20,6 +20,18 @@ p {
   font-size: 14px;
 }
 
+.link {
+  text-decoration: none;
+  color: #009688;
+  transition: transform 1s; /* Animation */
+}
+
+.link h3:hover {
+  color: #02756a;
+  transform: scale(1.05);
+  transition: transform 1s; /* Animation */
+}
+
 section {
   margin: auto;
   width: 90%;
