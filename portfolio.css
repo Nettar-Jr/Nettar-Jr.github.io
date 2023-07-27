@@ -236,6 +236,11 @@ header {
   .project {
     padding: 0rem;
     display: flex;
+    gap: 10px;
     flex-wrap: wrap;
+  }
+
+  hr {
+    margin-bottom: 50px;
   }
 }
