@@ -207,9 +207,16 @@ header {
 }
 
 @media only screen and (max-width: 600px) {
+  #about {
+    padding: 0;
+  }
   .texted {
     width: 100%;
     display: flex;
+  }
+
+  section {
+    /* width: 100%; */
   }
 
   .holder {
@@ -230,8 +237,9 @@ header {
   }
 
   #projects {
-    width: 100%;
+    width: 90%;
     padding: 0;
+    margin: auto;
   }
 
   .project {
