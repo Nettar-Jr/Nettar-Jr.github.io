@@ -210,6 +210,7 @@ header {
 @media only screen and (max-width: 600px) {
   #about {
     padding: 0;
+    margin: auto;
   }
   .texted {
     width: 100%;
@@ -252,5 +253,36 @@ header {
 
   hr {
     margin-bottom: 50px;
+  }
+
+  /* Hidden contents */
+  .holder {
+    display: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .parallelogramer {
+    display: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .hold {
+    display: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .parallelogram {
+    display: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .parallelogram2 {
+    display: none;
+    padding: 0;
+    margin: 0;
   }
 }
