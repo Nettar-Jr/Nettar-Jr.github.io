@@ -1,3 +1,4 @@
+/* General */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -19,31 +20,6 @@ p {
   font-size: 14px;
 }
 
-header {
-  background-color: #009688;
-  color: #fff;
-  text-align: center;
-  padding: 1rem 0;
-}
-
-nav {
-  display: flex;
-  justify-content: center;
-  background-color: #444;
-  padding: 0.5rem 0;
-}
-
-nav a {
-  color: #fff;
-  text-decoration: none;
-  margin: 0 1rem;
-  padding: 0.5rem 1rem;
-}
-
-nav a:hover {
-  background-color: #555;
-}
-
 section {
   margin: auto;
   width: 90%;
@@ -51,21 +27,84 @@ section {
   text-align: left;
 }
 
+/* header */
+header {
+  background-color: #009688;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.texted {
+  width: 100%;
+  display: flex;
+}
+
+.inner {
+  width: 50%;
+  border-left: 1px solid #009688;
+  padding-left: 10px;
+}
+
+/* About */
 #about h2 {
   font-size: 40px;
   margin-bottom: -10px;
+  color: #009688;
 }
 
 #about p {
-  width: 50%;
+  color: #009688;
+  line-height: 1.5em;
+  border-left: 1px solid #009688;
+  padding-left: 10px;
 }
 
+.styles {
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+}
+
+.holder {
+  display: flex;
+  padding-left: 150px;
+}
+
+.parallelogramer {
+  width: 100px;
+  height: 50px;
+  transform: skew(20deg);
+  background: #009688;
+  border: 1px solid #fff;
+}
+
+.hold {
+  display: flex;
+}
+
+.parallelogram {
+  width: 100px;
+  height: 50px;
+  transform: skew(20deg);
+  background: #009688;
+  border: 1px solid #fff;
+}
+
+.parallelogram2 {
+  width: 100px;
+  height: 50px;
+  transform: skew(340deg);
+  background: #009688;
+  border: 1px solid #fff;
+}
+
+/* projects */
 .project {
   display: flex;
-  gap: 20px; /* Adjust the gap between the containers as needed */
-  /* border: 1px solid #ccc; */
+  gap: 100px; /* Adjust the gap between the containers as needed */
   padding: 1rem;
-  margin-bottom: 2rem;
 }
 
 .project img {
@@ -81,7 +120,7 @@ section {
 
 .portrait-thumbnail {
   position: absolute;
-  bottom: 20px; /* Adjust the positioning of the thumbnail */
+  bottom: 70px; /* Adjust the positioning of the thumbnail */
   right: 10px; /* Adjust the positioning of the thumbnail */
   width: 100px; /* Adjust the width of the thumbnail */
   height: 150px; /* Adjust the height of the thumbnail */
@@ -93,14 +132,11 @@ section {
   overflow: hidden;
 }
 
-.landscape-image {
-  width: 100%;
-  height: auto;
-}
-
 .description {
   padding: 10px;
   background-color: #f0f0f0; /* Optional: Add a background color to the description area */
+  color: #009688;
+  width: 70%;
 }
 
 /* Footer */
